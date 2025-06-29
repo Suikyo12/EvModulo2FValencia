@@ -39,9 +39,162 @@
         </div>
       </div>
     </nav>
-    <!--COntenido dinámico-->
-    <div class="container mt-5"></div>
-    <!-- contenido específico-->
+
+    <!--Cards-->
+    <div class="card-group">
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="./assets/img/phishing.png"
+          alt="phishing"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Phishing</h5>
+          <p class="card-text">
+            El phishing es un tipo de ataque cibernético en el que los
+            delincuentes intentan engañar a las personas para que revelen
+            información personal confidencial, como contraseñas, números de
+            tarjetas de crédito e información bancaria.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="./assets/img/ransomware.png"
+          alt="ransomware"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Ransomware</h5>
+          <p class="card-text">
+            Es un tipo de malware que bloquea el acceso al sistema o archivos y
+            exige un rescate económico para liberarlos.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="./assets/img/malware.png"
+          alt="malware"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Malware</h5>
+          <p class="card-text">
+            Software malicioso diseñado para dañar, alterar o acceder sin
+            autorización a un sistema. Incluye virus, troyanos y spyware.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="./assets/img/ataque-ddos.png"
+          alt="ataque ddos"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Ataque DDoS</h5>
+          <p class="card-text">
+            Inundan un servidor con tráfico excesivo hasta colapsarlo, afectando
+            la disponibilidad de servicios online.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Carrusel-->
+
+    <div
+      id="carouselciberseguridad"
+      class="carousel slide mt-5 mb-5 container"
+      data-bs-ride="carousel"
+    >
+      <h3 class="text-center mb-4">Ejemplos de Ataques Reales</h3>
+      <div class="carousel-inner rounded shadow">
+        <div class="carousel-item active">
+          <img
+            src="./assets/img/jbs.png"
+            class="d-block w-100"
+            alt="ransomware ejemplo"
+          />
+          <div
+            class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-2"
+          >
+            <p>
+              En mayo, JBS, el mayor proveedor de carne de vacuno del mundo,
+              sufrió un ataque de ransomware del grupo REvil. La división
+              estadounidense, JBS USA, tuvo que detener completamente sus
+              operaciones debido al pirateo. La carne de vacuno desapareció de
+              los estantes de muchas tiendas en Estados Unidos, el pirateo
+              afectó a la cadena de suministro que se originó en JBS USA.
+            </p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="./assets/img/blackenergy.png"
+            class="d-block w-100"
+            alt="blackenergy"
+          />
+          <div
+            class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-2"
+          >
+            <p>
+              Un malware utilizado en ataques dirigidos, incluyendo ataques a
+              infraestructuras críticas como el apagón de Ucrania en 2015.
+            </p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="./assets/img/ddosgthub.png"
+            class="d-block w-100"
+            alt="Ejemplo 3"
+          />
+          <div
+            class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-2"
+          >
+            <p>
+              En 2018, GitHub sufrió el mayor ataque DDoS de la historia. La plataforma no
+              estaba preparada para la afluencia masiva de tráfico, que
+              alcanzó un récord de 1,3 terabits por segundo. Los
+              atacantes fueron capaces de falsificar la dirección IP de GitHub y amplificar masivamente
+               los niveles de tráfico dirigidos a laplataforma. Por suerte a los 10 minutos de desencadenarse el ataque, la empresa
+              pudo contenerlo y evitar que continuara
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controles -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselciberseguridad"
+        data-bs-slide="prev"
+      >
+        <span
+          class="carousel-control-prev-icon bg-dark rounded"
+          aria-hidden="true"
+        ></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselciberseguridad"
+        data-bs-slide="next"
+      >
+        <span
+          class="carousel-control-next-icon bg-dark rounded"
+          aria-hidden="true"
+        ></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+
     <script
       src="https://code.jquery.com/jquery-3.7.1.js"
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
