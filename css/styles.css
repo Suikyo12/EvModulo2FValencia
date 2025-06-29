@@ -1,0 +1,68 @@
+/* General */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar personalizado */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Card uniformes */
+.card-group .card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card {
+  border: 1px solid #dee2e6;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Carrusel */
+.carousel-inner img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  font-size: 1rem;
+}
+
+/* Lista de consejos */
+.list-group-item {
+  font-size: 1.1rem;
+}
+
+/* Botón personalizado */
+.btn-lg {
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+}
+
+/* Footer si agregas uno más adelante */
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* Responsivo adicional */
+@media (max-width: 768px) {
+  .card-group {
+    flex-direction: column;
+  }
+
+  .carousel-inner img {
+    height: 250px;
+  }
+}

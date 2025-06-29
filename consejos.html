@@ -39,9 +39,94 @@
         </div>
       </div>
     </nav>
-    <!--COntenido dinámico-->
-    <div class="container mt-5"></div>
-    <!-- contenido específico-->
+
+    <!-- Sección de Consejos -->
+    <div class="container mt-5">
+      <h2 class="text-center mb-4">Buenas Prácticas de Seguridad en Línea</h2>
+      <ul class="list-group list-group-flush shadow">
+        <li class="list-group-item">
+          🔒 Usa contraseñas seguras y distintas para cada cuenta.
+        </li>
+        <li class="list-group-item">
+          📧 No abras correos ni enlaces sospechosos o no solicitados.
+        </li>
+        <li class="list-group-item">
+          🛡️ Mantén tu antivirus y software actualizados.
+        </li>
+        <li class="list-group-item">
+          🔐 Activa la verificación en dos pasos siempre que sea posible.
+        </li>
+        <li class="list-group-item">
+          🌐 Evita conectarte a redes Wi-Fi públicas sin protección VPN.
+        </li>
+      </ul>
+    </div>
+
+    <!-- Formulario de contacto -->
+  <div class="container mt-5">
+    <h3>¿Necesitas más información?</h3>
+    <form id="contactoForm" class="mt-3">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required />
+      </div>
+      <div class="mb-3">
+        <label for="correo" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="correo" placeholder="correo@ejemplo.com" required />
+      </div>
+      <div class="mb-3">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+
+  <!-- Botón para mtest en modal -->
+  <div class="container text-center mt-5 mb-4">
+    <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#modalTest">
+      ¿Cuanto sabes de seguridad?
+    </button>
+  </div>
+
+  <!-- Modal del Test -->
+  <div class="modal fade" id="modalTest" tabindex="-1" aria-labelledby="modalTestLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTestLabel">Test Básico de Seguridad</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form id="testSeguridad">
+            <div class="mb-3">
+              <label class="form-label">1. ¿Cuál es una buena práctica de seguridad?</label>
+              <select class="form-select" id="pregunta1" required>
+                <option value="">Selecciona una opción</option>
+                <option value="a">Usar la misma contraseña para todo</option>
+                <option value="b">Actualizar el software regularmente</option>
+                <option value="c">Aceptar todos los archivos desconocidos</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">2. ¿Qué es el phishing?</label>
+              <select class="form-select" id="pregunta2" required>
+                <option value="">Selecciona una opción</option>
+                <option value="a">Técnica para mejorar la conexión</option>
+                <option value="b">Ataque para robar información con engaños</option>
+                <option value="c">Protección contra virus</option>
+              </select>
+            </div>
+            <div class="text-end">
+              <button type="submit" class="btn btn-primary">Enviar respuestas</button>
+            </div>
+          </form>
+          <div id="resultadoTest" class="mt-4 text-center fw-bold"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <script
       src="https://code.jquery.com/jquery-3.7.1.js"
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
